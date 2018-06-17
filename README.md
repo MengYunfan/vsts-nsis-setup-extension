@@ -1,5 +1,7 @@
 # VSTS Extension
 
+[![Build Status](https://travis-ci.org/MengYunfan/vsts-nsis-setup-extension.svg?branch=master)](https://travis-ci.org/MengYunfan/vsts-nsis-setup-extension)
+
 A Nsis build extension for VSTS
 
 This extension can be used to build nsis script or to make nsis available for other tasks (as an environment variable).
