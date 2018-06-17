@@ -2,7 +2,7 @@
     "manifestVersion": 1,
     "id": "nsis-task",
     "name": "Nsis Build Task",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "publisher": "yunfan",
     "public": false,
     "icons": {
