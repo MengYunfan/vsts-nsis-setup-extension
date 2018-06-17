@@ -1,0 +1,60 @@
+{
+    "id": "041b4cd8-a1a0-4aaf-b25e-f50bdf31b925",
+    "name": "nsis",
+    "friendlyName": "Nsis",
+    "description": "Run Nsis",
+    "helpMarkDown": "Run Nsis [More Information](https://github.com/MengYunfan/vsts-nsis-setup-extension)",
+    "category": "Build",
+    "author": "yunfan",
+    "version": {
+        "Major": 0,
+        "Minor": 1,
+        "Patch": 0
+    },
+    "links": {
+        "home": {
+            "uri": "https://github.com/MengYunfan/vsts-nsis-setup-extension"
+        },
+        "repository": {
+            "uri": "https://github.com/MengYunfan/vsts-nsis-setup-extension"
+        },
+        "issues": {
+            "uri": "https://github.com/MengYunfan/vsts-nsis-setup-extension/issues"
+        }
+    },
+    "repository": {
+        "type": "git",
+        "uri": "https://github.com/MengYunfan/vsts-nsis-setup-extension"
+    },
+    "minimumAgentVersion": "2.0.0",
+    "instanceNameFormat": "Nsis",
+    "inputs": [
+        {
+            "name": "scriptFile",
+            "type": "filePath",
+            "label": ".nsi script file",
+            "defaultValue": "install.nsi",
+            "helpMarkDown": "Path to the .nsi script file.",
+            "required": "true"
+        },
+        {
+            "name": "arguments",
+            "type": "string",
+            "label": "Arguments",
+            "defaultValue": "",
+            "helpMarkDown": "arguments to makensis.exe",
+            "required": "false"
+        }
+
+    ],
+    "execution": {
+        "PowerShell": {
+            "target": "$(currentDirectory)\\Nsis.ps1",
+            "argumentFormat": "",
+            "workingDirectory": "",
+            "platforms": [
+                "windows"
+            ]
+        }
+    }
+}
